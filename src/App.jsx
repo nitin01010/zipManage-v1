@@ -5,6 +5,9 @@ import Footer from './components/footer/footer';
 import Home from './components/Home/home';
 import AdminDashboard from './components/Dashboard/admin/dashboard/adminDashboard';
 import PaidDashboard from './components/Dashboard/admin/dashboard/paidDashboard/paidDashboard';
+import About from './components/Dashboard/admin/dashboard/pages/about';
+import Login from './components/Dashboard/admin/dashboard/pages/login';
+import ContactPage from './components/Dashboard/admin/dashboard/pages/contact';
 
 const App = () => {
   return (
@@ -13,7 +16,9 @@ const App = () => {
       <Routes>
         <Route index element={ <Home /> } />
         <Route path='/signup' element={ <AdminDashboard /> } />
-        <Route path='/login' element={ <h1>Login</h1> } />
+        <Route path='/login' element={ <Login /> } />
+        <Route path='/about' element={ <About /> } />
+        <Route path='/contacts' element={ <ContactPage /> } />
         <Route path='/admin/:businessName' element={ <PaidDashboard /> } />
         <Route path='/employee' element={ <h1>employee</h1> } />
         <Route path="*" element={ <h1>No Page Found</h1> } />
