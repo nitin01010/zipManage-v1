@@ -1,48 +1,34 @@
-import React from 'react'
+import React from 'react';
 
 const CardPrice = () => {
     return (
-        <div className='p-3 m-1 lg:m-7'>
-            <h1 className='text-center text-2xl mb-3 '>Our price</h1>
-            <div className='flex  gap-10 text-white  flex-wrap  justify-center '>
-                <div className='  bg-blue-800 '>
-                    <div className=' bg-blue-600 shadow-md p-3'>
-                        <h2 className=' mb-3'>Basic </h2>
-                        <p className=' font-extralight'>Access Some </p>
-                    </div>
-                    <div className=' font-light p-4 flex flex-col gap-10 mt-5'>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                    </div>
-                    <button className=' p-3 bg-white uppercase font-semibold  text-black m-2 w-[97%] rounded-sm'>Select now</button>
+        <div className="container mx-auto py-8 px-4 md:px-0">
+            <h1 className="text-center text-4xl font-bold mb-8">Choose Your Plan</h1>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center md:w-1/3 w-full">
+                    <h2 className="text-2xl font-bold mb-4">Basic</h2>
+                    <p className="text-gray-600 mb-6">Access essential features</p>
+                    <ul className="text-left mb-6">
+                        <li className="flex items-center mb-2"><span className="text-green-500 mr-2">&#10003;</span> Limited Access</li>
+                        <li className="flex items-center mb-2"><span className="text-green-500 mr-2">&#10003;</span> Basic Support</li>
+                        <li className="flex items-center mb-2"><span className="text-green-500 mr-2">&#10003;</span> Standard Features</li>
+                    </ul>
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">Select Basic</button>
                 </div>
 
-                <div className='  bg-blue-800'>
-                    <div className=' bg-blue-600 shadow-md p-3'>
-                        <h2 className=' mb-3'>Premium </h2>
-                        <p className=' font-extralight'>Access Everythink </p>
-                    </div>
-                    <div className=' font-light p-4 flex flex-col gap-10 mt-5'>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing. ✅ </p>
-                    </div>
-                    <button className=' p-3 bg-white uppercase font-semibold  text-black m-2 w-[97%] rounded-sm'>Select now</button>
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center md:w-1/3 w-full mt-4 md:mt-0">
+                    <h2 className="text-2xl font-bold mb-4">Premium</h2>
+                    <p className="text-gray-600 mb-6">Access all features</p>
+                    <ul className="text-left mb-6">
+                        <li className="flex items-center mb-2"><span className="text-green-500 mr-2">&#10003;</span> Full Access</li>
+                        <li className="flex items-center mb-2"><span className="text-green-500 mr-2">&#10003;</span> Priority Support</li>
+                        <li className="flex items-center mb-2"><span className="text-green-500 mr-2">&#10003;</span> Advanced Features</li>
+                    </ul>
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">Select Premium</button>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CardPrice
+export default CardPrice;

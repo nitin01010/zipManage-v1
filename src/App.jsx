@@ -8,6 +8,7 @@ import PaidDashboard from './components/Dashboard/admin/dashboard/paidDashboard/
 import About from './components/Dashboard/admin/dashboard/pages/about';
 import Login from './components/Dashboard/admin/dashboard/pages/login';
 import ContactPage from './components/Dashboard/admin/dashboard/pages/contact';
+import Career from './components/Dashboard/admin/dashboard/pages/career';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/signup' element={ <AdminDashboard /> } />
         <Route path='/login' element={ <Login /> } />
         <Route path='/about' element={ <About /> } />
+        <Route path='/career' element={ <Career /> } />
         <Route path='/contacts' element={ <ContactPage /> } />
         <Route path='/admin/:businessName' element={ <PaidDashboard /> } />
         <Route path='/employee' element={ <h1>employee</h1> } />

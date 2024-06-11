@@ -1,12 +1,12 @@
 import React from 'react'
-import AdminSignup from './pages/adminSignup'
 import SelectPlan from './pages/selectPlan'
+import AdminSignup from '../dashboard/pages/adminSignup';
 
 const AdminDashboard = () => {
     return (
         <div className=' p-5'>
             <AdminSignup />
-            <SelectPlan />
+            {/* <SelectPlan /> */ }
         </div>
     )
 }
