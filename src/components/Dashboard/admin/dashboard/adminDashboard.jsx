@@ -4,7 +4,7 @@ import AdminSignup from '../dashboard/pages/adminSignup';
 
 const AdminDashboard = () => {
     return (
-        <div className=' p-5'>
+        <div className=' p-1 lg:p-5'>
             <AdminSignup />
             {/* <SelectPlan /> */ }
         </div>
