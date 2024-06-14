@@ -9,6 +9,7 @@ import About from './components/Dashboard/admin/dashboard/pages/about';
 import Login from './components/Dashboard/admin/dashboard/pages/login';
 import ContactPage from './components/Dashboard/admin/dashboard/pages/contact';
 import Career from './components/Dashboard/admin/dashboard/pages/career';
+import Employee from './components/Dashboard/admin/employee/dashboard/employee';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/career' element={ <Career /> } />
         <Route path='/contacts' element={ <ContactPage /> } />
         <Route path='/admin/:businessName' element={ <PaidDashboard /> } />
+        <Route path='/employee/:id' element={ <Employee /> } />
         <Route path='/employee' element={ <h1>employee</h1> } />
         <Route path="*" element={ <h1>No Page Found</h1> } />
       </Routes>

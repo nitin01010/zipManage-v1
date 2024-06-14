@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import AddEmployee from './UI/addEmployee';
-import IdCard from './UI/idCard';
-import Salary from './UI/salary';
-import BusinessFinance from './UI/businessFinance';
-import Client from './UI/client';
+import Dashboard from './UI/dashboard';
+import Task from './UI/task';
+import Profile from './UI/profile';
 
-const PaidDashboard = () => {
+const Employee = () => {
     const [activeTab, setActiveTab] = useState('1');
 
     const handleTabChange = (key) => {
@@ -13,16 +11,14 @@ const PaidDashboard = () => {
     };
 
     const tabs = [
-        { id: '1', label: 'Add Employee', content: <AddEmployee /> },
-        { id: '3', label: 'Salary', content: <Salary /> },
-        { id: '4', label: 'Business Finance', content: <BusinessFinance /> },
-        { id: '5', label: 'Client', content: <Client /> },
-        { id: '6', label: 'ID Card', content: <IdCard /> },
+        { id: '1', label: 'Home', content: <Dashboard /> },
+        { id: '2', label: 'Task', content: <Task /> },
+        { id: '3', label: 'Profile', content: <Profile /> },
     ];
 
     return (
-        <div className="flex min-w-full min-h-screen max-w-screen-lg max-h-screen mx-auto">
-            <div className="flex flex-col w-1/5 bg-gray-100 p-4 border-r border-gray-300">
+        <div className="flex flex-col lg:flex-row min-w-full min-h-screen max-w-screen-lg max-h-screen mx-auto bg-gray-100">
+            <div className="flex flex-col w-full lg:w-1/5 bg-white p-4 border-r border-gray-300">
                 { tabs.map((tab) => (
                     <button
                         key={ tab.id }
@@ -43,4 +39,4 @@ const PaidDashboard = () => {
     );
 };
 
-export default PaidDashboard;
+export default Employee;
